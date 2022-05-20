@@ -18,7 +18,8 @@ Abstract
    Protocol (BGP) community for identifying anycast prefixes in IP
    networks.  This well-known advisory transitive BGP community named
    "ANYCAST" allows an origin Autonomous System (AS) to signal a
-   neighboring network the tagged IP prefix is available as anycast.
+   neighboring network that the tagged IP prefix is available via
+   anycast and should be routed hot potato.
 
 About This Document
 
@@ -70,9 +71,10 @@ Table of Contents
    1.  Introduction
    2.  Conventions and Definitions
    3.  ANYCAST Community
-   4.  Security Considerations
-   5.  IANA Considerations
-   6.  Normative References
+   4.  Vendor Implementation Recommendations
+   5.  Security Considerations
+   6.  IANA Considerations
+   7.  Normative References
    Acknowledgments
    Authors' Addresses
 
@@ -95,21 +97,28 @@ Table of Contents
 
    The semantics of this community allow a network to interpret the
    presence of this community as an advisory qualification that this
-   prefix is available as anycast.
+   prefix is available via anycast and should be routed in a hot potato
+   fashion.
 
-4.  Security Considerations
+4.  Vendor Implementation Recommendations
+
+   Vendors MAY provide a shorthand keyword in their configuration
+   language to reference the well-known ANYCAST community attribute
+   value.  The suggested string to be used is "anycast".
+
+5.  Security Considerations
 
    TODO Security
 
-5.  IANA Considerations
+6.  IANA Considerations
 
-   This document requires addition of a new entry to the "BGP Well-known
-   Communities" registry.  IANA should make include in the registry
+   The IANA is requested to add ANYCAST to the "BGP Well-known
+   Communities" registry.  The following attribute is to be registered
    before publication:
 
-   ANYCAST (=0xFFFF????)
+   ANYCAST (=0xFFFF000A)
 
-6.  Normative References
+7.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
