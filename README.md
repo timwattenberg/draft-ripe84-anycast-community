@@ -1,6 +1,6 @@
-# BGP Community for Anycast Prefixes
+# ANYCAST Community
 
-This is the working area for the individual Internet-Draft, "BGP Community for Anycast Prefixes".
+This is the working area for the individual Internet-Draft, "ANYCAST Community".
 
 * [Editor's Copy](https://timwattenberg.github.io/draft-ripe84-anycast-community/#go.draft-ripe84-anycast-community.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-ripe84-anycast-community)
