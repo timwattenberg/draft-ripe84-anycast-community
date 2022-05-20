@@ -40,7 +40,7 @@ informative:
 
 --- abstract
 
-This document describes the use of a well-known Border Gateway Protocol (BGP) community for identifying anycast prefixes in IP networks.  This well-known advisory transitive BGP community named "ANYCAST" allows an origin Autonomous System (AS) to signal a neighboring network the tagged IP prefix is available as anycast.
+This document describes the use of a well-known Border Gateway Protocol (BGP) community for identifying anycast prefixes in IP networks. This well-known advisory transitive BGP community named "ANYCAST" allows an origin Autonomous System (AS) to signal a neighboring network that the tagged IP prefix is available via anycast and should be routed hot potato.
 
 
 --- middle
@@ -59,7 +59,7 @@ TODO Introduction
 
 This document defines the use of a new well-known BGP transitive community, ANYCAST.
 
-The semantics of this community allow a network to interpret the presence of this community as an advisory qualification that this prefix is available as anycast.
+The semantics of this community allow a network to interpret the presence of this community as an advisory qualification that this prefix is available via anycast and should be routed in a hot potato fashion.
 
 
 # Security Considerations
