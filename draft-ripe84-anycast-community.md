@@ -1,5 +1,5 @@
 ---
-title: "BGP Community for Anycast Prefixes"
+title: "ANYCAST Community"
 #abbrev: "TODO - Abbreviation"
 category: info
 
@@ -10,13 +10,13 @@ date:
 consensus: true
 v: 3
 area: "Internet"
-workgroup: "Anycast"
+workgroup: "Global Routing Operations"
 keyword:
  - next generation
  - unicorn
  - sparkling distributed ledger
 venue:
-  group: "Anycast"
+  group: "Global Routing Operations"
   type: "Working Group"
   mail: ""
   arch: ""
@@ -28,6 +28,10 @@ author:
     fullname: Tim Wattenberg
     organization: DE-CIX
     email: tim.wattenberg@de-cix.net
+ -
+    fullname: Your Name Here
+    organization: Your Organization Here
+    email: your.email@example.com
 
 normative:
 
@@ -36,7 +40,7 @@ informative:
 
 --- abstract
 
-TODO Abstract
+This document describes the use of a well-known Border Gateway Protocol (BGP) community for identifying anycast prefixes in IP networks.  This well-known advisory transitive BGP community named "ANYCAST" allows an origin Autonomous System (AS) to signal a neighboring network the tagged IP prefix is available as anycast.
 
 
 --- middle
@@ -51,6 +55,13 @@ TODO Introduction
 {::boilerplate bcp14-tagged}
 
 
+# ANYCAST Community
+
+This document defines the use of a new well-known BGP transitive community, ANYCAST.
+
+The semantics of this community allow a network to interpret the presence of this community as an advisory qualification that this prefix is available as anycast.
+
+
 # Security Considerations
 
 TODO Security
@@ -58,7 +69,12 @@ TODO Security
 
 # IANA Considerations
 
-This document has no IANA actions.
+This document requires addition of a new entry to the "BGP Well-known Communities" registry. 
+The registry shall include:
+
+```
+ANYCAST (=0xFFFF????)
+```
 
 
 --- back
@@ -66,4 +82,4 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-TODO acknowledge.
+The creation of this document was initiated by Fredy Künzler on RIPE84.
