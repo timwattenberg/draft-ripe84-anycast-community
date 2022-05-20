@@ -70,7 +70,7 @@ TODO Security
 # IANA Considerations
 
 This document requires addition of a new entry to the "BGP Well-known Communities" registry. 
-The registry shall include:
+IANA should make include in the registry before publication:
 
 ```
 ANYCAST (=0xFFFF????)
