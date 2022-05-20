@@ -62,6 +62,11 @@ This document defines the use of a new well-known BGP transitive community, ANYC
 The semantics of this community allow a network to interpret the presence of this community as an advisory qualification that this prefix is available via anycast and should be routed in a hot potato fashion.
 
 
+# Vendor Implementation Recommendations
+
+Vendors MAY provide a shorthand keyword in their configuration language to reference the well-known ANYCAST community attribute value. The suggested string to be used is "anycast".
+
+
 # Security Considerations
 
 TODO Security
