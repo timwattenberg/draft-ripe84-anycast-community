@@ -9,19 +9,19 @@ number:
 date:
 consensus: true
 v: 3
-area: AREA
-workgroup: WG Working Group
+area: "Internet"
+workgroup: "Anycast"
 keyword:
  - next generation
  - unicorn
  - sparkling distributed ledger
 venue:
-  group: WG
-  type: Working Group
-  mail: WG@example.com
-  arch: https://example.com/WG
-  github: USER/REPO
-  latest: https://example.com/LATEST
+  group: "Anycast"
+  type: "Working Group"
+  mail: ""
+  arch: ""
+  github: "timwattenberg/draft-ripe84-anycast-community"
+  latest: "https://timwattenberg.github.io/draft-ripe84-anycast-community/draft-ripe84-anycast-community.html"
 
 author:
  -
