@@ -74,11 +74,11 @@ TODO Security
 
 # IANA Considerations
 
-This document requires addition of a new entry to the "BGP Well-known Communities" registry. 
-IANA should make include in the registry before publication:
+The IANA is requested to add ANYCAST to the "BGP Well-known Communities" registry.
+The following attribute is to be registered before publication:
 
 ```
-ANYCAST (=0xFFFF????)
+ANYCAST (=0xFFFF000A)
 ```
 
 
